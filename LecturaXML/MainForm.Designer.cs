@@ -28,44 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnGenerarGastos = new System.Windows.Forms.Button();
+            this.LabelReceptor = new System.Windows.Forms.Label();
+            this.TextBoxReceptor = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // button1
+            // btnGenerarGastos
             // 
-            this.button1.Location = new System.Drawing.Point(10, 60);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(262, 45);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Seleccionar archivos";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnGenerarGastos.Location = new System.Drawing.Point(10, 60);
+            this.btnGenerarGastos.Name = "btnGenerarGastos";
+            this.btnGenerarGastos.Size = new System.Drawing.Size(262, 45);
+            this.btnGenerarGastos.TabIndex = 0;
+            this.btnGenerarGastos.Text = "Seleccionar archivos";
+            this.btnGenerarGastos.UseVisualStyleBackColor = true;
+            this.btnGenerarGastos.Click += new System.EventHandler(this.btnGenerarGastos_Click);
             // 
-            // label1
+            // LabelReceptor
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(10, 25);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(75, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "RFC Receptor";
+            this.LabelReceptor.AutoSize = true;
+            this.LabelReceptor.Location = new System.Drawing.Point(10, 25);
+            this.LabelReceptor.Name = "LabelReceptor";
+            this.LabelReceptor.Size = new System.Drawing.Size(75, 13);
+            this.LabelReceptor.TabIndex = 1;
+            this.LabelReceptor.Text = "RFC Receptor";
             // 
-            // textBox1
+            // TextBoxReceptor
             // 
-            this.textBox1.Location = new System.Drawing.Point(91, 23);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(181, 20);
-            this.textBox1.TabIndex = 2;
+            this.TextBoxReceptor.Location = new System.Drawing.Point(91, 23);
+            this.TextBoxReceptor.Name = "TextBoxReceptor";
+            this.TextBoxReceptor.Size = new System.Drawing.Size(181, 20);
+            this.TextBoxReceptor.TabIndex = 2;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 121);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.TextBoxReceptor);
+            this.Controls.Add(this.LabelReceptor);
+            this.Controls.Add(this.btnGenerarGastos);
             this.Name = "MainForm";
             this.Text = "Generación de Gastos";
             this.ResumeLayout(false);
@@ -75,9 +76,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnGenerarGastos;
+        private System.Windows.Forms.Label LabelReceptor;
+        private System.Windows.Forms.TextBox TextBoxReceptor;
     }
 }
 
